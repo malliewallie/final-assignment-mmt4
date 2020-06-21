@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code4Kids</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Navigatiebalk (fixed) -->
+    <nav>
+        <div id="naviga">
+            <!-- logo nav -->
+            <div class="linksnav">
+                <div class="logolight"></div>
+            </div>
+            <!-- text midden navigatiebalk -->
+            <ul class="middennav">
+                <li class="navli"><a href="#" class='navtxt'>OVER ONS</a></li>
+                <li class="navli"><a href="#" class='navtxt'>LESMATERIAAL</a></li>
+                <li class="navli"><a href="#" class='navtxt'>CONTACT</a></li>
+            </ul>
+            <!-- Button rechts dag/nacht -->
+            <div class="rechtsnav">
+                <div class="light"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        </div>
+    </nav>
+    <!-- Header (Hero afbeelding) -->
+    <header>
+        <div class="heroimg">
+            <div id="herotxt">
+                <h1 class="h1hero">Van beginner naar expert</h1>
+                <h1 class="h1hero">Het lesmateriaal brengt je verder</h1>
+                <h3 id="h3hero">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus. Vivamus
+                    sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</h3>
+            </div>
+        </div>
+    </header>
+    <!-- Main (article) -->
+    <main>
+        <div id="mainbody">
+            <!-- Leer Codeer Speel blokjes -->
+            <div id="LCS">
+
+                <div class="LCSblokjes">
+                    <div class="blimg1">
+                        <div id="dark1"></div>
+                    </div>
+                    <h2 class="bloktxt">Leer</h2>
+                </div>
+                <div class="LCSblokjes">
+                    <div class="blimg2">
+                        <div id="dark2"></div>
+                    </div>
+                    <h2 class="bloktxt">Codeer</h2>
+                </div>
+                <div class="LCSblokjes">
+                    <div class="blimg3">
+                        <div id="dark3"></div>
+                    </div>
+                    <h2 class="bloktxt">Speel</h2>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <h2 class="h2main">Playlist</h2>
+            <!-- accordion met video -->
+            <!-- acc 1 -->
+            <div id="accordion">
+                <div class="accbalk">
+                    <div class="accimg"></div>
+                    <h3 class="acctxt">Algemene introductie</h3>
+                </div>
+                <div class="videoplayer">
+                    <video data-setup='{"controls": false, "loop": false, "autoplay": false, "responsive": true}' id="my-video1" class="video-js" preload="auto" width="1100" height="612" poster="img/tlou.jpg" data-setup="{}">
+                        <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
+                            type="video/webm" />
+                        <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports
+                                HTML5 video</a></p>
+                    </video>
+                    <div class="btnvid">
+                        <div class="rewind">
+                            <img src="img/rewind-btn.svg" alt="rewind">
+                        </div>
+                        <div class="playpause">
+                            <img src="img/play-btn.svg" class="play" alt="play">
+                            <img src="img/pause-btn.svg" class="pause" alt="pause">
+                        </div>
+                        <div class="forward">
+                            <img src="img/forward-btn.svg" alt="frwd">
+                        </div>
+                    </div>
+                    <div class="modalpopup1"></div>
+                </div>
+                <!-- acc 2 -->
+                <div class="accbalk">
+                    <div class="accimg"></div>
+                    <h3 class="acctxt">Workshop 1: Kleuren met code</h3>
+                </div>
+                <div class="videoplayer">
+                    <video data-setup='{"controls": false, "loop": false, "autoplay": false}' id="my-video2" class="video-js" controls preload="auto" width="1100" height="612" poster="img/tlou2.jpg" data-setup="{}">
+                        <source
+                            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                            type="video/webm" />
+                        <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports
+                                HTML5 video</a></p>
+                    </video>
+                    <div class="btnvid">
+                        <div class="rewind">
+                            <img src="img/rewind-btn.svg" alt="rewind">
+                        </div>
+                        <div class="playpause">
+                            <img src="img/play-btn.svg" class="play" alt="play">
+                            <img src="img/pause-btn.svg" class="pause" alt="pause">
+                        </div>
+                        <div class="forward">
+                            <img src="img/forward-btn.svg" alt="frwd">
+                        </div>
+                        <div class="modalpopup2"></div>
+                    </div>
+                </div>
+                <!-- acc 3 -->
+                <div class="accbalk">
+                    <div class="accimg"></div>
+                    <h3 class="acctxt">Workshop 2: Vormen maken</h3>
+                </div>
+                <div class="videoplayer">
+                    <video data-setup='{"controls": false, "loop": false, "autoplay": false}' id="my-video3" class="video-js" controls preload="auto" width="1100" height="612" poster="img/tlou3.jpg" data-setup="{}">
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                            type="video/webm" />
+                        <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports
+                                HTML5 video</a></p>
+                    </video>
+                    <div class="btnvid">
+                        <div class="rewind">
+                            <img src="img/rewind-btn.svg" alt="rewind">
+                        </div>
+                        <div class="playpause">
+                            <img src="img/play-btn.svg" class="play" alt="play">
+                            <img src="img/pause-btn.svg" class="pause" alt="pause">
+                        </div>
+                        <div class="forward">
+                            <img src="img/forward-btn.svg" alt="frwd">
+                        </div>
+                        <div class="modalpopup3"></div>
+                    </div>
+                </div>
+                <!-- acc 4 -->
+                <div class="accbalk">
+                    <div class="accimg"></div>
+                    <h3 class="acctxt">Workshop 3: Beweging</h3>
+                </div>
+                <div class="videoplayer">
+                    <video data-setup='{"controls": false, "loop": false, "autoplay": false}' id="my-video4" class="video-js" controls preload="auto" width="1100" height="612" poster="img/tlou4.jpg" data-setup="{}">
+                        <source
+                            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+                            type="video/webm" />
+                        <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports
+                                HTML5 video</a></p>
+                    </video>
+                    <div class="btnvid">
+                        <div class="rewind">
+                            <img src="img/rewind-btn.svg" alt="rewind">
+                        </div>
+                        <div class="playpause">
+                            <img src="img/play-btn.svg" class="play" alt="play">
+                            <img src="img/pause-btn.svg" class="pause" alt="pause">
+                        </div>
+                        <div class="forward">
+                            <img src="img/forward-btn.svg" alt="frwd">
+                        </div>
+                        <div class="modalpopup4"></div>
+                    </div>
+                </div>
+                <!-- acc 5 -->
+                <div class="accbalk">
+                    <div class="accimg"></div>
+                    <h3 class="acctxt">Workshop 4: Variabelen gebruiken</h3>
+                </div>
+                <div class="videoplayer">
+                    <video data-setup='{"controls": false, "loop": false, "autoplay": false}' id="my-video5" class="video-js" controls preload="auto" width="1100" height="612" poster="img/tlou5.jpg" data-setup="{}">
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+                            type="video/webm" />
+                        <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports
+                                HTML5 video</a></p>
+                    </video>
+                    <div class="btnvid">
+                        <div class="rewind">
+                            <img src="img/rewind-btn.svg" alt="rewind">
+                        </div>
+                        <div class="playpause">
+                            <img src="img/play-btn.svg" class="play" alt="play">
+                            <img src="img/pause-btn.svg" class="pause" alt="pause">
+                        </div>
+                        <div class="forward">
+                            <img src="img/forward-btn.svg" alt="frwd">
+                        </div>
+                        <div class="modalpopup5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <h3 class="h3cta">Support</h3>
+                <div class="txtsup">
+                    <h3 class="h3cta">Onze studenten staan voor je klaar. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. </h3>
+                </div>
+                <a id="btncta1" class="btncta" href="#">NAAR CONTACT</a>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="supportcontainer">
+                <img src="img/sup1.png" alt="s1" class="supimg">
+                <h2 class="suph2">Alina Kovalchuk</h2>
+                <a href="#" class="supcont">Contact</a>
+                <p>Hoofd support</p>
+            </div>
+            <div class="supportcontainer">
+                <img src="img/sup2.png" alt="s2" class="supimg">
+                <h2 class="suph2">Kal Visuals</h2>
+                <p>Hoofd support</p>
+                <a href="#" class="supcont">Contact</a>
+            </div>
+            <div class="supportcontainer">
+                <img src="img/sup3.png" alt="s3" class="supimg">
+                <h2 class="suph2">Gorgie Encinas</h2>
+                <p>Hoofd support</p>
+                <a href="#" class="supcont">Contact</a>
+            </div>
+            <div class="supportcontainer">
+                <img src="img/sup4.png" alt="s4" class="supimg">
+                <h2 class="suph2">Norman Toth</h2>
+                <p>Hoofd support</p>
+                <a href="#" class="supcont">Contact</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (voetstuk, Hero afbeelding 2) -->
+    <a target="_blank" href="https://www.youtube.com/watch?v=-0PfGJPO-k4&list=RD-0PfGJPO-k4&start_radio=1">
+        <footer>
+            <h1 class="footerh1">Klaar voor de volgende uitdaging</h1>
+            <h3 class="footerh3">In ons expertprogramma vind je lessen voor gevorderden</h3>
+            <a target="_blank" href="https://www.youtube.com/watch?v=-0PfGJPO-k4&list=RD-0PfGJPO-k4&start_radio=1" class="btncta">KOM MAAR OP</a>
+        </footer>
+    </a>
+
+    <!-- Script inladen -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.8.2/video.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

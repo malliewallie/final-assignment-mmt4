@@ -1,0 +1,806 @@
+html {
+    min-height: 100% !important;
+    height: 100%;
+}
+
+
+/* Algemeen */
+
+.clear {
+    clear: both;
+}
+
+
+/* Tekst Algemeen */
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: left;
+    font: Bold 60px/80px Playfair Display;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+h2 {
+    font: Bold 18px/22px Montserrat;
+    letter-spacing: 0.9px;
+    color: #CC0085;
+}
+
+h3 {
+    text-align: left;
+    font: Bold 22px/27px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+
+/* Nav text */
+
+.navtxt {
+    font: Bold 1em Montserrat;
+    color: #CC0085;
+    letter-spacing: 0.8px;
+}
+
+
+/* Nav float*/
+
+.linksnav {
+    float: left;
+}
+
+.middennav {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0px;
+    padding: 0px;
+    transform: translate(-50%, -50%);
+}
+
+#rechtsnav {
+    float: right;
+    margin-top: 25px;
+}
+
+.logolight {
+    margin-top: 15px;
+    background-image: url(../img/logo.svg);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+.light {
+    position: absolute;
+    background-image: url(../img/switch.svg);
+    width: 75px;
+    height: 75px;
+    background-size: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 10px;
+    right: 30px;
+}
+
+
+/* nav */
+
+nav {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+#naviga {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 60%;
+    height: 100px;
+    top: 50px;
+    left: 50%;
+    border-radius: 0px 0px 33px 33px;
+    background: white;
+    padding: 0px 50px;
+}
+
+.navli {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+
+/* button dag/nacht navigatiebalk */
+
+
+/* header hero afbeelding */
+
+.heroimg {
+    max-width: 100%;
+    height: 800px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.90), rgba(255, 18, 172, 0.80)), url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#herotxt {
+    margin: 0 auto;
+    max-width: 100vw;
+    padding-left: 25%;
+    padding-top: 10%;
+}
+
+.h1hero {
+    text-align: left;
+}
+
+#h3hero {
+    width: 750px;
+    text-align: left;
+}
+
+
+/* main */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: white;
+}
+
+#mainbody {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#LCS {
+    padding-left: 12px;
+}
+
+
+/* main leer codeer speel blokjes */
+
+.LCSblokjes {
+    width: 352px;
+    height: 384px;
+    border-radius: 10px;
+    background: #F4F2FF;
+    float: left;
+    margin-right: 10px;
+    margin-top: -150px;
+    margin-bottom: 45px;
+}
+
+.h2main {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.blimg1 {
+    width: 155px;
+    height: 155px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-image: url(../img/leer.svg);
+}
+
+.blimg2 {
+    width: 155px;
+    height: 155px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-image: url(../img/codeer.svg);
+}
+
+.blimg3 {
+    width: 155px;
+    height: 155px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-image: url(../img/speel.svg);
+}
+
+.bloktxt {
+    text-align: center;
+}
+
+
+/* Accordion */
+
+.accbalk {
+    width: 1096px;
+    height: 72px;
+    background-color: white;
+    border: 4px solid #F4F2FF;
+    position: relative;
+}
+
+.acctxt {
+    color: #FFAFE3;
+    margin-left: 15%;
+    position: absolute;
+    top: 30%;
+}
+
+.accimg {
+    width: 35px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-image: url(../img/triangleinactive.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+.accbalk.ui-state-active .accimg {
+    background-image: url(../img/triangleactive.svg);
+    margin-top: 12px;
+    margin-left: 17px;
+}
+
+.accbalk.ui-state-active .acctxt {
+    color: #CC0085;
+}
+
+#accordion {
+    margin-bottom: 45px;
+}
+
+
+/* videospeler */
+
+#my-video1 {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 55%;
+    position: relative;
+}
+
+#my-video2 {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 55%;
+    position: relative;
+}
+
+#my-video3 {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 55%;
+    position: relative;
+}
+
+#my-video4 {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 55%;
+    position: relative;
+}
+
+#my-video5 {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 55%;
+    position: relative;
+}
+
+.video-js {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.videoplayer {
+    position: relative;
+}
+
+.playpause,
+.rewind,
+.forward {
+    top: 50%;
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.play {
+    transform: translateX(50%);
+}
+
+.pause {
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+
+.playpause {
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.forward {
+    left: 60%;
+}
+
+.rewind {
+    left: 40%;
+}
+
+#accordion .ui-accordion-content:hover .playpause {
+    visibility: visible;
+}
+
+#accordion .ui-accordion-content:hover .forward {
+    visibility: visible;
+}
+
+#accordion .ui-accordion-content:hover .rewind {
+    visibility: visible;
+}
+
+@keyframes v1k {
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.3, 1.3);
+    }
+}
+
+.modalpopup1,
+.modalpopup2,
+.modalpopup3,
+.modalpopup4,
+.modalpopup5 {
+    animation-name: v1k;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-image: url(../img/modal.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    visibility: hidden;
+}
+
+
+/*footer*/
+
+.txtsup {
+    width: 60%;
+}
+
+.h3cta {
+    color: #CC0085;
+    margin-top: 20px;
+}
+
+#btncta1 {
+    background-color: #CC0085;
+    color: white;
+    float: right;
+    margin-top: -7%;
+}
+
+footer {
+    height: 450px;
+    width: 100%;
+    margin-top: 100px;
+    background-image: linear-gradient(318deg, rgba(255, 18, 172, 0.75) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footerh1 {
+    padding-top: 75px;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+.footerh3 {
+    padding-top: 25px;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.btncta {
+    text-align: center;
+    padding: 20px 40px;
+    margin: 0 auto;
+    background: white;
+    text-decoration: none;
+    color: #CC0085;
+    font: Bold 16px/18px Montserrat;
+    border-radius: 10px;
+    margin-left: 45%;
+}
+
+
+/* darkmode */
+
+.dark {
+    position: absolute;
+    background-image: url(../img/switchdark.svg);
+    width: 75px;
+    height: 75px;
+    background-size: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 10px;
+    right: 30px;
+}
+
+.footergradient {
+    background: linear-gradient(0deg, rgba(29, 0, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.herogradient {
+    background-image: linear-gradient(0deg, rgba(29, 0, 255, 0.75) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logodark {
+    margin-top: 15px;
+    background-image: url(../img/logodark.svg);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+.blimg1dark {
+    width: 155px;
+    height: 155px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-image: url(../img/leerdark.svg);
+}
+
+.blimg2dark {
+    width: 155px;
+    height: 155px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-image: url(../img/codeerdark.svg);
+}
+
+.blimg3dark {
+    width: 155px;
+    height: 155px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-image: url(../img/speeldark.svg);
+}
+
+
+/* Support */
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.supportcontainer {
+    width: 400px;
+    height: 200px;
+    background: #F4F2FF;
+    margin-right: 20px;
+    margin-top: 52px;
+    border-radius: 10px;
+}
+
+.slick-next:before {
+    color: #CC0085;
+}
+
+.slick-prev:before {
+    color: #CC0085;
+}
+
+.supimg {
+    position: absolute;
+    width: 145px;
+    height: 145px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+.suph2 {
+    position: absolute;
+    margin-left: 195px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+p {
+    position: absolute;
+    margin-left: 195px;
+    margin-top: 70px;
+    text-align: left;
+    font: Bold 18px/22px Montserrat;
+    letter-spacing: 0.9px;
+    color: #FFAFE3;
+}
+
+.supcont {
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: #CC0085;
+    color: white;
+    font: Bold 18px/22px Montserrat;
+    position: absolute;
+    margin-left: 195px;
+    margin-top: 100px;
+}
+
+
+/* responsiveness */
+
+@media all and (max-width: 1350px) {
+    h1 {
+        font: Bold 40px Playfair Display;
+    }
+    h2 {
+        font: Bold 18px/22px Montserrat;
+    }
+    h3 {
+        font: Bold 18px Montserrat;
+    }
+    .navtxt {
+        font-size: 0.7em;
+    }
+    .navli {
+        margin-right: 10px;
+    }
+    .light {
+        width: 75px;
+        height: 75px;
+        background-size: 75px;
+    }
+    .dark {
+        width: 75px;
+        height: 75px;
+        background-size: 75px;
+    }
+    #herotxt {
+        width: 80%;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .h1hero {
+        text-align: left;
+    }
+    #h3hero {
+        width: 80%;
+        text-align: left;
+    }
+    .accbalk {
+        width: 80%;
+        height: 72px;
+        margin: 0 auto;
+        background-color: white;
+        border: 4px solid #F4F2FF;
+        position: relative;
+    }
+    .acctxt {
+        color: #FFAFE3;
+        margin-left: 15%;
+        position: absolute;
+        top: 30%;
+    }
+    .videoplayer {
+        width: calc(80% + 8px);
+        margin: 0 auto;
+    }
+    .LCSblokjes {
+        float: none;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 25px;
+    }
+    #btncta1 {
+        float: none;
+        width: 150px;
+        display: block;
+        margin-top: 45px;
+    }
+    .btncta {
+        margin-left: 0px;
+        width: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+    .container1 {
+        padding-left: 110px;
+    }
+    .h2main {
+        padding-left: 100px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    #accordion {
+        overflow: hidden;
+    }
+    h1 {
+        font: Bold 24px Playfair Display;
+    }
+    h2 {
+        font: Bold 18px/22px Montserrat;
+    }
+    h3 {
+        font: Bold 14px Montserrat;
+    }
+    #herotxt {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .navtxt {
+        font-size: 0.6em;
+        font-weight: 800;
+    }
+    .navli {
+        margin-right: 3px;
+    }
+    .logolight {
+        height: 50px;
+        width: 50px;
+        background-size: 50px;
+        top: 10%;
+        left: 2%;
+        position: absolute;
+    }
+    .logodark {
+        height: 50px;
+        width: 50px;
+        background-size: 50px;
+        top: 10%;
+        left: 2%;
+        position: absolute;
+    }
+    .light {
+        width: 50px;
+        height: 50px;
+        background-size: 50px;
+        top: 20%;
+        right: 2%;
+    }
+    .dark {
+        width: 50px;
+        height: 50px;
+        background-size: 50px;
+        top: 20%;
+        right: 2%;
+    }
+    .container1 {
+        padding-left: 50px;
+    }
+    .h2main {
+        padding-left: 40px;
+    }
+    #btncta1 {
+        float: none;
+        width: 150px;
+        display: block;
+        margin-top: 95px;
+        margin: 0 auto;
+    }
+    .acctxt {
+        font-size: 0.5 em;
+    }
+    .forward {
+        left: 80%;
+    }
+    .rewind {
+        left: 20%;
+    }
+}
+
+@media all and (max-width:1050px) {
+    .modalpopup1,
+    .modalpopup2,
+    .modalpopup3,
+    .modalpopup4,
+    .modalpopup5 {
+        width: 65%;
+        height: 65%;
+        background-size: 65%;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .acctxt {
+        font-size: 12px;
+        margin-left: 25%;
+    }
+    .LCSblokjes {
+        width: calc(352px / 1.2);
+        width: calc(384px / 1.2);
+        margin-left: 8%;
+    }
+    .supportcontainer {
+        width: 300px;
+        height: 150px;
+    }
+    .supimg {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .suph2 {
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 50px;
+        font-size: 16px;
+    }
+    p {
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 70px;
+        font: Bold 14px/16px Montserrat;
+    }
+    .supcont {
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #CC0085;
+        color: white;
+        font: Bold 14px/16px Montserrat;
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 95px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .LCSblokjes {
+        width: calc(352px / 1.2);
+        width: calc(384px / 1.2);
+        margin-left: 2%;
+    }
+}
